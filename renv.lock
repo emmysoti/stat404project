@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.1",
+    "Version": "4.4.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -9,6 +9,28 @@
     ]
   },
   "Packages": {
+    "curl": {
+      "Package": "curl",
+      "Version": "8.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "dcc26807db0bc989e0287a1f77f82dae"
+    },
+    "random": {
+      "Package": "random",
+      "Version": "0.2.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "curl",
+        "utils"
+      ],
+      "Hash": "9db2f3b55a266bb32405ae7162199163"
+    },
     "renv": {
       "Package": "renv",
       "Version": "1.0.11",
