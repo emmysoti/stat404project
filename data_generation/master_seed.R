@@ -1,7 +1,5 @@
 
-##############################################################################################
-## Please only run this script once! It generates the master seed for the rest of the seeds!
-##############################################################################################
+# master will be a new number every time this is run. master_seed is simply one of the earlier values it took
 
 # This package connects to a true random number generator at random.org
 renv::install("random")
