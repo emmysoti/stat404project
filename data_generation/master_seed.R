@@ -7,6 +7,7 @@
 renv::install("random")
 library(random)
 
-# master seed is 297
-master_seed <- randomNumbers(n = 1, min = 1, max = 1000, col = 1)[1,1]
+# master is 979 
+master <- randomNumbers(n = 1, min = 1, max = 1000, col = 1)[1,1]
+master_seed <- 979
 
