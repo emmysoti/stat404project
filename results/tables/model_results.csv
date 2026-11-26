@@ -1,0 +1,121 @@
+"dataset","dataset_id","model","relationship","noise","evaluation_order","noise_free_rmse","test_rmse","best_k","best_depth"
+1,"linear_1","OLS","linear","high",1,0.0689632866765709,4.76931048372156,NA,NA
+1,"linear_1","kNN","linear","high",2,0.949726696564519,4.88242792422206,40,NA
+1,"linear_1","random forest","linear","high",3,0.980924560971157,4.89983999659887,NA,4
+2,"linear_2","OLS","linear","high",1,0.234447724825354,5.08019157046363,NA,NA
+2,"linear_2","kNN","linear","high",2,1.1943195031386,5.20880273621974,20,NA
+2,"linear_2","random forest","linear","high",3,0.889026479300454,5.25876583652317,NA,4
+3,"linear_3","OLS","linear","high",1,0.0914156853875125,4.91622333028186,NA,NA
+3,"linear_3","random forest","linear","high",2,1.02541622821235,4.94775923571655,NA,4
+3,"linear_3","kNN","linear","high",3,1.00466953527988,4.95316779973015,40,NA
+4,"linear_4","kNN","linear","high",1,1.088612371248,5.19927281550323,20,NA
+4,"linear_4","OLS","linear","high",2,0.440012972056238,5.11334609551897,NA,NA
+4,"linear_4","random forest","linear","high",3,1.03290740959991,5.13150478877357,NA,4
+5,"linear_5","OLS","linear","high",1,0.247485694664928,4.76219726651062,NA,NA
+5,"linear_5","random forest","linear","high",2,0.93367496672986,4.86213397241345,NA,4
+5,"linear_5","kNN","linear","high",3,1.15754618579597,4.87144485438394,40,NA
+6,"linear_6","OLS","linear","high",1,0.143447376874949,4.5289971494652,NA,NA
+6,"linear_6","kNN","linear","high",2,0.903778390394938,4.57399280771365,40,NA
+6,"linear_6","random forest","linear","high",3,0.808721883461216,4.57091020282569,NA,4
+7,"linear_7","random forest","linear","high",1,0.834071324596885,4.85474861645387,NA,4
+7,"linear_7","kNN","linear","high",2,1.06136107626008,4.97792787020245,40,NA
+7,"linear_7","OLS","linear","high",3,0.138878654846525,4.88792465799645,NA,NA
+8,"linear_8","OLS","linear","high",1,0.294905168881534,4.83631832690901,NA,NA
+8,"linear_8","random forest","linear","high",2,1.21717477304681,5.13457166004131,NA,4
+8,"linear_8","kNN","linear","high",3,1.37536060221673,5.10903601233152,20,NA
+9,"linear_9","random forest","linear","high",1,1.02624278049105,5.0362992158318,NA,4
+9,"linear_9","kNN","linear","high",2,0.884399640592606,5.04095978840331,40,NA
+9,"linear_9","OLS","linear","high",3,0.173703849707651,4.8574794286501,NA,NA
+10,"linear_10","random forest","linear","high",1,1.04471600268897,4.91560473992353,NA,4
+10,"linear_10","kNN","linear","high",2,0.870085334262825,4.92114473825255,40,NA
+10,"linear_10","OLS","linear","high",3,0.203031816894758,4.88607537141855,NA,NA
+11,"linear_11","OLS","linear","low",1,0.0120052646305947,0.493352438239508,NA,NA
+11,"linear_11","random forest","linear","low",2,0.175727805287645,0.512540941084055,NA,6
+11,"linear_11","kNN","linear","low",3,0.230860586386261,0.532752827105012,5,NA
+12,"linear_12","kNN","linear","low",1,0.227757199869371,0.513011781623078,5,NA
+12,"linear_12","random forest","linear","low",2,0.175436603003719,0.502735324911041,NA,6
+12,"linear_12","OLS","linear","low",3,0.0182981495160069,0.483419978061787,NA,NA
+13,"linear_13","kNN","linear","low",1,0.445684106009012,0.646972252448356,10,NA
+13,"linear_13","random forest","linear","low",2,0.322459266422958,0.563603974508017,NA,6
+13,"linear_13","OLS","linear","low",3,0.0279303283511474,0.527631248213267,NA,NA
+14,"linear_14","OLS","linear","low",1,0.0343424581051327,0.461186271650269,NA,NA
+14,"linear_14","random forest","linear","low",2,0.191614309928422,0.497308894680719,NA,6
+14,"linear_14","kNN","linear","low",3,0.30608280372298,0.54136014806012,3,NA
+15,"linear_15","random forest","linear","low",1,0.272066981549695,0.56283446500743,NA,6
+15,"linear_15","kNN","linear","low",2,0.33340244135804,0.590175744846077,5,NA
+15,"linear_15","OLS","linear","low",3,0.0255604361115664,0.478467609733918,NA,NA
+16,"linear_16","OLS","linear","low",1,0.0515093759508329,0.493480923876122,NA,NA
+16,"linear_16","kNN","linear","low",2,0.331373172752242,0.623797227873506,5,NA
+16,"linear_16","random forest","linear","low",3,0.287391872684983,0.589964440865845,NA,6
+17,"linear_17","kNN","linear","low",1,0.316360156954078,0.581020196325676,3,NA
+17,"linear_17","OLS","linear","low",2,0.00427726646870084,0.464089032616978,NA,NA
+17,"linear_17","random forest","linear","low",3,0.232972165861238,0.53607145949885,NA,6
+18,"linear_18","kNN","linear","low",1,0.492652053837247,0.73908983558168,3,NA
+18,"linear_18","OLS","linear","low",2,0.0415117014556197,0.506292540096944,NA,NA
+18,"linear_18","random forest","linear","low",3,0.452401463510649,0.694796269973441,NA,6
+19,"linear_19","random forest","linear","low",1,0.172297127763724,0.542452611782528,NA,6
+19,"linear_19","OLS","linear","low",2,0.0413512909483539,0.532256182744108,NA,NA
+19,"linear_19","kNN","linear","low",3,0.223865882963318,0.548727803791146,5,NA
+20,"linear_20","OLS","linear","low",1,0.00648911387973918,0.491088941305203,NA,NA
+20,"linear_20","kNN","linear","low",2,0.30151791697018,0.596843394417631,3,NA
+20,"linear_20","random forest","linear","low",3,0.175635088098032,0.524812624302729,NA,6
+1,"quadratic_1","kNN","quadratic","high",1,2.90205325599092,5.5070936160827,3,NA
+1,"quadratic_1","random forest","quadratic","high",2,2.56719466319228,5.38260450044685,NA,8
+1,"quadratic_1","OLS","quadratic","high",3,25.7444205991974,25.9782615268178,NA,NA
+2,"quadratic_2","OLS","quadratic","high",1,25.9236168200757,25.7211788455673,NA,NA
+2,"quadratic_2","random forest","quadratic","high",2,2.04499676445576,5.14570026833812,NA,8
+2,"quadratic_2","kNN","quadratic","high",3,2.45430416652995,5.29813688388749,5,NA
+3,"quadratic_3","kNN","quadratic","high",1,4.10780588217136,6.69628123866902,3,NA
+3,"quadratic_3","OLS","quadratic","high",2,28.6190935095927,28.6572563223123,NA,NA
+3,"quadratic_3","random forest","quadratic","high",3,3.56493635720841,6.19214507999343,NA,6
+4,"quadratic_4","OLS","quadratic","high",1,24.6361339891995,25.3845336366219,NA,NA
+4,"quadratic_4","kNN","quadratic","high",2,2.24636607599396,5.22552578731337,5,NA
+4,"quadratic_4","random forest","quadratic","high",3,1.65221134668053,4.9912641422137,NA,6
+5,"quadratic_5","kNN","quadratic","high",1,3.52691294881286,5.99571161771958,3,NA
+5,"quadratic_5","OLS","quadratic","high",2,26.12892484078,26.7330601508492,NA,NA
+5,"quadratic_5","random forest","quadratic","high",3,2.76162162878504,5.37468669312175,NA,8
+6,"quadratic_6","random forest","quadratic","high",1,4.70072253566635,6.62299912714556,NA,6
+6,"quadratic_6","OLS","quadratic","high",2,24.716341555717,25.213551623109,NA,NA
+6,"quadratic_6","kNN","quadratic","high",3,4.94494477830859,6.99239656539816,5,NA
+7,"quadratic_7","OLS","quadratic","high",1,23.6120601737398,24.1538775803784,NA,NA
+7,"quadratic_7","kNN","quadratic","high",2,3.35776543433412,5.29571565668557,5,NA
+7,"quadratic_7","random forest","quadratic","high",3,2.5177462877093,5.05842650474941,NA,6
+8,"quadratic_8","OLS","quadratic","high",1,28.0860117535659,28.7974526604596,NA,NA
+8,"quadratic_8","random forest","quadratic","high",2,5.60775622705494,7.90289154404736,NA,8
+8,"quadratic_8","kNN","quadratic","high",3,6.48501234050724,8.61049839161017,5,NA
+9,"quadratic_9","random forest","quadratic","high",1,1.6876247102479,5.300628666823,NA,6
+9,"quadratic_9","kNN","quadratic","high",2,3.12235695936092,5.71926367644586,3,NA
+9,"quadratic_9","OLS","quadratic","high",3,21.0426155056086,21.8393195806866,NA,NA
+10,"quadratic_10","kNN","quadratic","high",1,3.3499642315117,6.28153557356096,3,NA
+10,"quadratic_10","random forest","quadratic","high",2,2.46638168384284,5.44420995549295,NA,6
+10,"quadratic_10","OLS","quadratic","high",3,22.010237865356,22.3642167338364,NA,NA
+11,"quadratic_11","random forest","quadratic","low",1,9.29057168531526,9.29622768188572,NA,12
+11,"quadratic_11","OLS","quadratic","low",2,32.4321254036075,32.4124225967544,NA,NA
+11,"quadratic_11","kNN","quadratic","low",3,7.92052311624514,7.93228395809457,1,NA
+12,"quadratic_12","OLS","quadratic","low",1,28.095596122818,28.0838687103492,NA,NA
+12,"quadratic_12","kNN","quadratic","low",2,6.31680316473431,6.32429369399789,1,NA
+12,"quadratic_12","random forest","quadratic","low",3,7.51321180592246,7.51673213615185,NA,12
+13,"quadratic_13","OLS","quadratic","low",1,25.5931371862771,25.6379870729046,NA,NA
+13,"quadratic_13","kNN","quadratic","low",2,0.648367926102405,0.850744232972171,1,NA
+13,"quadratic_13","random forest","quadratic","low",3,1.368562514248,1.47429472105029,NA,12
+14,"quadratic_14","random forest","quadratic","low",1,0.841067270205303,0.999198793592382,NA,12
+14,"quadratic_14","kNN","quadratic","low",2,1.08610954862978,1.16067369874577,1,NA
+14,"quadratic_14","OLS","quadratic","low",3,25.4971310737805,25.5428027709504,NA,NA
+15,"quadratic_15","kNN","quadratic","low",1,1.38078022293397,1.51509360418332,1,NA
+15,"quadratic_15","random forest","quadratic","low",2,1.12500331221293,1.27183291392771,NA,12
+15,"quadratic_15","OLS","quadratic","low",3,23.0017542439179,23.0118038628641,NA,NA
+16,"quadratic_16","OLS","quadratic","low",1,25.4384683095956,25.429169296016,NA,NA
+16,"quadratic_16","random forest","quadratic","low",2,3.42187393738466,3.44377370959434,NA,12
+16,"quadratic_16","kNN","quadratic","low",3,3.06623976177318,3.09746077162986,1,NA
+17,"quadratic_17","random forest","quadratic","low",1,0.837094150353364,1.02503612349452,NA,12
+17,"quadratic_17","OLS","quadratic","low",2,26.7258187850594,26.7974105785879,NA,NA
+17,"quadratic_17","kNN","quadratic","low",3,0.881712822968042,1.02514438215937,1,NA
+18,"quadratic_18","kNN","quadratic","low",1,0.711997431156975,0.817240438788554,1,NA
+18,"quadratic_18","OLS","quadratic","low",2,27.5603376177122,27.4755023612667,NA,NA
+18,"quadratic_18","random forest","quadratic","low",3,1.37830468019359,1.38966657463688,NA,12
+19,"quadratic_19","kNN","quadratic","low",1,0.952825902002079,1.09810733158868,1,NA
+19,"quadratic_19","random forest","quadratic","low",2,1.40574587143039,1.5065469563989,NA,8
+19,"quadratic_19","OLS","quadratic","low",3,27.0111105122077,27.0103713369769,NA,NA
+20,"quadratic_20","random forest","quadratic","low",1,0.52680534953242,0.721285371924424,NA,12
+20,"quadratic_20","OLS","quadratic","low",2,20.7442817486583,20.7647887703703,NA,NA
+20,"quadratic_20","kNN","quadratic","low",3,0.694350628262424,0.908178068823677,1,NA
