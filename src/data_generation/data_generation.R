@@ -1,5 +1,6 @@
 # renv::install("tidyverse")
 library(tidyverse)
+library(rio)
 
 # Set master seed from data_generation/master_seed.R
 source("src/data_generation/master_seed.R")
