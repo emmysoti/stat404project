@@ -846,6 +846,19 @@
       ],
       "Hash": "4f50122dc256b1b6996a4703fecea821"
     },
+    "nlme": {
+      "Package": "nlme",
+      "Version": "3.1-166",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "graphics",
+        "lattice",
+        "stats",
+        "utils"
+      ]
+    },
     "openssl": {
       "Package": "openssl",
       "Version": "2.6.0",
