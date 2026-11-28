@@ -154,3 +154,49 @@ tryCatch({
 
 print(descriptive, row.names = FALSE)
 print(initial_summary)
+
+# Pairwise model comparisons within each relationship-noise scenario.
+fit <- blocked_anova
+d$logRMSE <- log(d$noise_free_rmse)
+cm <- model.tables(fit, type = "means")$tables[["model:relationship:noise"]]
+m <- rbind("Linear, low"     = cm[, "linear", "low"],
+           "Linear, high"    = cm[, "linear", "high"],
+           "Quadratic, low"  = cm[, "quadratic", "low"],
+           "Quadratic, high" = cm[, "quadratic", "high"])
+print(round(m, 3))
+
+est <- cbind("OLS vs kNN" = m[, "OLS"] - m[, "kNN"],
+             "OLS vs RF"  = m[, "OLS"] - m[, "random forest"],
+             "RF vs kNN"  = m[, "random forest"] - m[, "kNN"])
+print(round(est, 3))
+
+df_within <- df.residual(fit$Within)
+MS <- deviance(fit$Within) / df_within
+SE <- sqrt(MS * 2 / 10)
+t <- est / SE
+p <- 2 * pt(-abs(t), df = df_within)
+lo <- est - qt(0.975, df_within) * SE
+hi <- est + qt(0.975, df_within) * SE
+print(round(t, 2))
+print(signif(p, 2))
+
+# Ratios are first model / second model geometric mean noise-free RMSE.
+# CIs are pointwise 95%; p-values and stars have no multiplicity adjustment.
+final <- matrix(paste0(sprintf("%.2f", exp(est)), " (", sprintf("%.2f", exp(lo)), ", ",
+                       sprintf("%.2f", exp(hi)), ")", ifelse(p < 0.05, "*", "")),
+                nrow = 4, dimnames = dimnames(est))
+print(final)
+cat("Ratios of geometric means; pointwise 95% CIs. * p < 0.05, unadjusted.\n")
+
+contrast_results <- data.frame(
+  scenario = rep(rownames(est), times = ncol(est)),
+  comparison = rep(colnames(est), each = nrow(est)),
+  log_ratio = as.vector(est), se_log_ratio = SE, df = df_within,
+  t_statistic = as.vector(t), p_unadjusted = as.vector(p),
+  ratio = as.vector(exp(est)),
+  ci95_lower = as.vector(exp(lo)), ci95_upper = as.vector(exp(hi))
+)
+write.csv(contrast_results, file.path(tables_dir, "pairwise_model_comparisons.csv"),
+          row.names = FALSE)
+write.csv(data.frame(scenario = rownames(final), final, check.names = FALSE),
+          file.path(tables_dir, "pairwise_ratio_summary.csv"), row.names = FALSE)
